@@ -60,7 +60,7 @@ namespace BetterPlayers.Patches
                 Plugin.ImNotUsingPSA = true;
                 Plugin.ICanGetOutTheMap = true;
             }
-            else if (Il2CppSystem.IO.File.Exists(FullPath) && Il2CppSystem.IO.File.Exists(FullPathV2)) // checks if NoPSA & NoSpeedBoost exist
+            else if (Il2CppSystem.IO.File.Exists(FullPath) && Il2CppSystem.IO.File.Exists(FullPathV2))
             {
                 Plugin.ImJustFastBro = false;
                 Plugin.ImNotUsingPSA = false;
@@ -88,11 +88,11 @@ namespace BetterPlayers.Patches
 
             if (Il2CppSystem.IO.File.Exists(FullPath))
             {
-                Plugin.ImJustFastBro = false;
-                Plugin.ImNotUsingPSA = true;
+                Plugin.ImJustFastBro = true;
+                Plugin.ImNotUsingPSA = false;
                 Plugin.ICanGetOutTheMap = true;
             }
-            else if (Il2CppSystem.IO.File.Exists(FullPath) && Il2CppSystem.IO.File.Exists(FullPathV2)) // checks if NoPSA & NoSpeedBoost exist
+            else if (Il2CppSystem.IO.File.Exists(FullPath) && Il2CppSystem.IO.File.Exists(FullPathV2))
             {
                 Plugin.ImJustFastBro = false;
                 Plugin.ImNotUsingPSA = false;
@@ -120,15 +120,15 @@ namespace BetterPlayers.Patches
 
             if (Il2CppSystem.IO.File.Exists(FullPath))
             {
-                Plugin.ImJustFastBro = false;
+                Plugin.ImJustFastBro = true;
                 Plugin.ImNotUsingPSA = true;
-                Plugin.ICanGetOutTheMap = true;
+                Plugin.ICanGetOutTheMap = false;
             }
-            else if (Il2CppSystem.IO.File.Exists(FullPath) && Il2CppSystem.IO.File.Exists(FullPathV2)) // checks if NoPSA & NoSpeedBoost exist
+            else if (Il2CppSystem.IO.File.Exists(FullPath) && Il2CppSystem.IO.File.Exists(FullPathV2))
             {
-                Plugin.ImJustFastBro = false;
+                Plugin.ImJustFastBro = true;
                 Plugin.ImNotUsingPSA = false;
-                Plugin.ICanGetOutTheMap = true;
+                Plugin.ICanGetOutTheMap = false;
             }
             else if (Il2CppSystem.IO.File.Exists(FullPath) && Il2CppSystem.IO.File.Exists(FullPathV3))
             {
